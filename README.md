@@ -13,7 +13,7 @@
 
 ## ✨ Visão Geral
 
-O **brandao.sn** é uma landing page moderna e responsiva, pensada para destacar a marca e proporcionar uma experiência única ao usuário.  
+O **brandao.sn** é uma landing page moderna e responsiva, pensada para uma ótima experiência ao usuário.  
 Este repositório concentra todo o desenvolvimento e evolução do projeto.
 
 ---
