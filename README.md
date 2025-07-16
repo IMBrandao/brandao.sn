@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/IMBrandao/branding_logo.png" alt="Brandao.sn Logo" width="150"/>
   <h1>brandao.sn 🚀</h1>
   <p>
     <b>Landing page oficial do domínio <code>brandao.sn</code></b><br>
@@ -59,12 +58,22 @@ cd brandao.sn
   <tr>
     <td align="center">
       <a href="https://github.com/IMBrandao">
-        <img src="https://avatars.githubusercontent.com/u/IMBrandao?v=4" width="80" alt="IMBrandao"/><br>
-        <sub><b>IMBrandao</b></sub>
+        <!-- avatar: use o ID numérico (ex.: 12345678) ou prefira a forma sem ID -->
+        <img src="https://avatars.githubusercontent.com/IMBrandao" width="100" alt="Foto de Itallo Brandão"/>
+        <br/>
+        <sub><strong>Itallo M. Brandão</strong></sub>
+      </a>
+      <br/>
+      <a href="https://www.linkedin.com/in/itallomarinsbrandao/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      </a>
+      <a href="https://github.com/IMBrandao">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
       </a>
     </td>
   </tr>
 </table>
+
 
 ---
 
