@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contato - brandao.sn</title>
+  <meta name="description" content="Entre em contato com Itallo Marins Brandão.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .profile-photo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .contact-social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .contact-social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      color: #fafafa;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, .5);
+      transition: background .3s, border-color .3s, transform .2s;
+      font-size: 1.25rem;
+    }
+
+    .contact-social-icons a:hover {
+      background: rgba(255, 255, 255, .15);
+      border-color: rgba(255, 255, 255, .9);
+      transform: translateY(-2px);
+    }
+
+    .contact-social-icons i {
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- PARTICLE EFFECTS CONTAINER -->
+  <div id="particles"></div>
+
+  <header>
+    <a href="index.html" class="logo">brandao.sn</a>
+    <button class="menu-toggle" onclick="toggleMenu()"><span></span></button>
+    <nav id="mobile-menu">
+      <a href="index.html">Início</a>
+      <a href="#">Notícias</a>
+      <a href="#">Blog</a>
+      <a href="#">Estudos</a>
+      <a href="#">Newsletter</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div id="page-content">
+    <div class="content-wrapper">
+      <main>
+        <div class="contact-container">
+          <h1 class="contact-title">Vamos construir algo incrível.</h1>
+
+          <div class="contact-content">
+            <!-- Left side: Photo and about -->
+            <div class="contact-left">
+              <div class="profile-photo-container">
+                <img src="images/Perfil Brandao.jpg" alt="Itallo Brandão" class="profile-photo">
+                <h2 class="profile-name">Itallo BRANDÃO</h2>
+                <p class="profile-title">Solutions Architect</p>
+              </div>
+
+
+            </div>
+
+            <!-- Right side: Contact info -->
+            <div class="contact-right">
+
+              <div class="about-section">
+                <h2>Sobre Mim</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia.</p>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="contact-actions">
+            <br>
+            <p class="contact-subtitle">Se você tem um projeto em mente, uma pergunta ou apenas quer dizer um "Oi!",
+              <br>
+              meu inbox está sempre aberto.
+            </p>
+            <h3>Me acompanhe nas Redes!</h3>
+            <div class="contact-social-icons">
+              <a href="https://www.linkedin.com/in/itallomarinsbrandao/" target="_blank" rel="noopener"
+                aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/IMBrandao" target="_blank" rel="noopener" aria-label="GitHub"><i
+                  class="bi bi-github"></i></a>
+              <a href="https://www.youtube.com/@BrandaoSN" target="_blank" rel="noopener" aria-label="Youtube"><i
+                  class="bi bi-youtube"></i></a>
+              <a href="https://api.whatsapp.com/send/?phone=5562999284868&amp;text=Ol%C3%A1%2C%20Brand%C3%A3o!%0ATudo%20bem%3F&amp;type=phone_number&amp;app_absent=0"
+                target="_blank" rel="noopener" aria-label="Whatsapp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 brandao.sn — Todos os direitos reservados
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function updateScrollbarWidth() {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+    }
+
+    window.addEventListener('load', updateScrollbarWidth);
+    window.addEventListener('resize', updateScrollbarWidth);
+  </script>
+</body>
+
+</html>
