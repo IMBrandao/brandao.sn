@@ -1,0 +1,277 @@
+/* =================================== */
+/*          CONTACT PAGE STYLES        */
+/* =================================== */
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+    color: #fafafa;
+    min-height: calc(100vh - 4rem);
+}
+
+.contact-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 600;
+    color: #fafafa;
+    animation: neon 3s ease-in-out infinite alternate;
+    text-shadow: 0 0 6px rgba(255, 255, 255, .5), 0 0 15px rgba(0, 255, 255, .6);
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.contact-title.is-hidden {
+    opacity: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Left side - Photo and About */
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo-container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.profile-photo:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow:
+        0 12px 40px rgba(0, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin-bottom: 0;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-section {
+    max-width: 640px;
+    margin-bottom: 1.5rem;
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fafafa;
+    text-align: center;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 1.05rem;
+    text-indent: 1.5rem;
+}
+
+.about-section p.quote {
+    text-align: center;
+    text-indent: 0;
+    font-style: italic;
+    margin-top: 1.5rem;
+}
+
+.about-section .quote-author {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-style: italic;
+    font-size: 0.95rem;
+    text-indent: 0;
+    width: 100%;
+    text-align: right;
+}
+
+/* Right side - Contact info */
+.contact-subtitle {
+    font-size: 1.3rem;
+    color: #ccc;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.contact-actions {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.contact-actions h3 {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fafafa;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-actions h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Email button */
+.contact-button-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact-button-email i {
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.contact-button-email:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        0 6px 30px rgba(0, 255, 255, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Social icons */
+.contact-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-socials a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 255, 255, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 6rem 1rem 4rem;
+    }
+
+    .contact-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+        margin-bottom: 3rem;
+    }
+
+    .contact-content {
+        text-align: center;
+    }
+
+    .profile-photo-container,
+    .profile-name,
+    .profile-title,
+    .contact-actions h3 {
+        text-align: center;
+    }
+
+    .contact-button-email {
+        max-width: 100%;
+    }
+
+    .contact-socials {
+        justify-content: center;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-name {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .contact-socials a {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+
